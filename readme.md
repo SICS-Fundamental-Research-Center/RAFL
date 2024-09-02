@@ -1,6 +1,6 @@
 ## RAFL:A Retrieval-Augmented Framework for Tabular Interpretation with Large Language Model
 
-This is the code and necessary files for our paper: A Retrieval-Augmented Framework for Tabular Interpretation with Large Language Model
+This is the code and necessary files for our paper: A Retrieval-Augmented Framework for Tabular Interpretation with Large Language Model, paper is available at [Here](./supplementary/DASFAA_Camera_Ready.pdf)
 
 ### Requirements
 
@@ -44,5 +44,10 @@ train_tables.jsonl
 ```
 and put then in `data/REL`. We also provide the processed version for RE task in `data/RE`, EL task in `data/EL` seperately.
 ### Data Proprocess
+Please check `data_preproces.ipynb` For the detail of process. 
+
+In general, we retrieve the CTA/RE/EL file, then transfer them to <query,pos,neg> pairs, which <pos> are labeled options, and <neg> are all other options. <query> contains $T_m$ and $T.E$ respectively. We uploaded 
+
+
 ### Pre-ranking Model Training
 ### Re-Ranking Model Training 
